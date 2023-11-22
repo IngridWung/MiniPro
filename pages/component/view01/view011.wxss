@@ -1,0 +1,19 @@
+/* pages/view01/view011.wxss */
+.sw1{
+  background-color: darkturquoise;
+  height:400rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+.sw2{
+  background-color:deepskyblue;
+  height:400rpx;
+  text-align: center;
+  font-size: 40rpx;
+}
+.sw3{
+  background-color:mistyrose;
+  height:400rpx;
+  text-align: center;
+  font-size: 40rpx;
+}

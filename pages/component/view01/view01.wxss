@@ -1,0 +1,29 @@
+/* pages/view01/view01.wxss */
+.flex-wrp{
+  display:flex;
+  flex-direction:row;
+  /* color:cornflowerblue; */
+}
+.flex-wrp{
+  flex-grow: 1;
+}
+.first{
+  background: aquamarine;
+  height:200rpx;
+  width:33%;
+}
+.second{
+  background:blueviolet;
+  height:200rpx;
+  width:33%;
+}
+.third{
+  background:cadetblue;
+  height:200rpx;
+  width:33%;
+}
+.forth{
+  background: darksalmon;
+  height:200rpx;
+  width:33%;
+}

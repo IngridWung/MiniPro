@@ -1,0 +1,6 @@
+<!--pages/term/term02/term02.wxml-->
+<text>pages/term/term02/term02.wxml</text>
+<view>
+  <button type="primary" bindtap="jumpToData01" size="mini">数据绑定</button>
+  <!-- <button type="primary" bindtap="jumpToData01" size="mini">数据绑定</button> -->
+</view>

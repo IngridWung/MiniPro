@@ -1,0 +1,8 @@
+<!--pages/api/file01/file01.wxml-->
+<!-- <text>pages/api/file01/file01.wxml</text> -->
+<view>
+  <text>上传照片</text>
+  <button class="Bt" type="mini" bindtap="chooseImage">上传照片</button>
+  <text>下载文件</text>
+  <button class="Bt" type="mini" bindtap="downloadF">下载文件</button>
+</view>

@@ -1,0 +1,86 @@
+{
+  "cloud": true,
+  "pages": [
+    "pages/term/term01/term01",
+    "pages/term/term02/term02",
+    "pages/term/term03/term03",
+    "pages/component/radio01/radio01",
+    "pages/component/view01/view01",
+    "pages/component/view01/view011",
+    "pages/component/view02/view02",
+    "pages/component/picker01/picker01",
+    "pages/component/image01/image01",
+    "pages/component/input01/input01",
+    "pages/component/map01/map01",
+    "pages/component/navigator01/navigator01",
+    "pages/component/video01/video01",
+    "pages/component/canvas01/canvas01",
+    "pages/component/openwebview01/openwebview01",
+    "pages/component/openwebview01/openwebview011",
+    "pages/component/popup01/popup01",
+    "pages/component/popup02/popup02",
+    "pages/api/request01/request01",
+    "pages/api/file01/file01",
+    "pages/api/storage01/storage01",
+    "pages/api/map02/map02",
+    "pages/api/web01/web01",
+    "pages/api/audio01/audio01",
+    "pages/api/photo01/photo01",
+    "pages/api/photo02/photo02",
+    "pages/index/index",
+    "pages/eventP/event01/event01",
+    "pages/eventP/event02/event02",
+    "pages/bind/data01/data01",
+    "pages/logs/logs",
+    "pages/cloudtest/cloudtest",
+    "pages/cloud/cloud01/cloud01",
+    "pages/demo/demo"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#009393",
+    "navigationBarTitleText": "小程序",
+    "navigationBarTextStyle": "white"
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json",
+  "tabBar": {
+    "list": [
+      {
+        "pagePath": "pages/term/term01/term01",
+        "text": "组件",
+        "iconPath": "pages/pics/icon/组件.png",
+        "selectedIconPath": "pages/pics/icon/组件.png"
+      },
+      {
+        "pagePath": "pages/term/term03/term03",
+        "text": "API",
+        "iconPath": "pages/pics/icon/api.png",
+        "selectedIconPath": "pages/pics/icon/api.png"
+      },
+      {
+        "pagePath": "pages/cloudtest/cloudtest",
+        "text": "云开发",
+        "iconPath": "pages/pics/icon/云.png",
+        "selectedIconPath": "pages/pics/icon/云.png"
+      },
+      {
+        "pagePath": "pages/eventP/event01/event01",
+        "text": "事件触发",
+        "iconPath": "pages/pics/icon/事件管理.png",
+        "selectedIconPath": "pages/pics/icon/事件管理.png"
+      },
+      {
+        "pagePath": "pages/bind/data01/data01",
+        "text": "模板文件",
+        "iconPath": "pages/pics/icon/绑定.png",
+        "selectedIconPath": "pages/pics/icon/绑定.png"
+      }
+    ]
+  },
+  "permission": {
+    "scope.userLocation": {
+      "desc": "您的位置信息将用于寻找附近的门店"
+    }
+  }
+}

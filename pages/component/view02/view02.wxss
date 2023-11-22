@@ -1,0 +1,39 @@
+/* pages/component/view02/view02.wxss */
+
+.myScroll_y{
+  /* 盒子样式 */
+  width: 100%;
+  background: #aaa6aa;
+  height: 200rpx;
+ 
+}
+ 
+.myScroll_y .row_y{
+  width: 100%;
+  height: 200rpx;
+  background: rgb(82, 63, 189);
+  margin-right: 20rpx;
+}
+ 
+
+.myScroll{
+  width: 100%;
+  background: #aaa6aa;
+  height: 200rpx;
+  white-space: nowrap;
+}
+ 
+.myScroll .row{
+  width: 200rpx;
+  height: 200rpx;
+  background: rgb(82, 63, 189);
+  margin-right: 20rpx;
+  /* 转成行级块元素 */
+  display: inline-block;
+ 
+}
+ 
+.myScroll .row:last-child{
+  margin-right: 0;
+ 
+}

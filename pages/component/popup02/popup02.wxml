@@ -1,0 +1,19 @@
+<!--pages/component/popup02/popup02.wxml-->
+<!-- <text>pages/component/popup02/popup02.wxml</text> -->
+
+<button class="show-btn" bindtap="showDialogBtn">提点建议</button>
+ 
+<view class="modal-mask" bindtap="hidePopup" catchtouchmove="preventTouchMove" wx:if="{{showPopup}}"></view>
+<view class="modal-dialog" wx:if="{{showPopup}}">
+  <view class="modal-title">为我们提出意见~</view>
+  <view class="modal-content">
+  <view style="margin-left: 50rpx;"><image src="/pages/pics/town_in_snow.jpg" style="width: 400rpx;height: 320rpx;"></image></view>
+    <view class="modal-input">
+      <input placeholder-class="input-holder" type="number" maxlength="10" bindinput="inputData" class="input" placeholder="请提出您的宝贵意见"></input>
+    </view>
+  </view>
+  <view class="modal-footer">
+    <view class="btn-cancel" bindtap="onCancel" data-status="cancel">取消</view>
+    <view class="btn-confirm" bindtap="onConfirm" data-status="confirm">提交</view>
+  </view>
+</view>

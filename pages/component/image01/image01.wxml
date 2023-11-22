@@ -1,0 +1,4 @@
+<!--pages/component/image01/image01.wxml-->
+<!-- <text>pages/component/image01/image01.wxml</text> -->
+<view class="title">雪中村庄</view>
+<image src="/pages/pics/town_in_snow.jpg" mode="aspectFit"></image>

@@ -1,0 +1,16 @@
+<!--checkbox-->
+<text>pages/radio01/radio01.wxml</text>
+<radio-group bindchange="radioChange">
+  <label wx:for="{{A}}" wx:key="{{A.value}}">
+    <radio value="{{item.value}}">{{item.value}}</radio>
+  </label>
+</radio-group>
+
+<checkbox-group bindchange="checkboxChange">
+  <label wx:for="{{A}}" wx:key="{{A.value}}">
+    <checkbox value="{{item.value}}">{{item.value}}</checkbox>
+  </label>
+</checkbox-group>
+<image src="/pages/pics/icon/绑定.png" style="height: 80rpx; width: 80rpx;opacity: {{imgOpacity}};"></image>
+<text>\n slider滑块调整图片透明度</text>
+<slider bindchange='changeImgOpacity' min="0" max="1" step="0.1" show-value value="1"></slider> 

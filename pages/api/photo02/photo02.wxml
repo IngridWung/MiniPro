@@ -1,0 +1,6 @@
+<!--pages/api/photo02/photo02.wxml-->
+<!-- <text>pages/api/photo02/photo02.wxml</text> -->
+<view>
+  <button class="Bt" bindtap="chooseimage">上传图片</button>
+  <image src="{{tempFilePaths}}" style="width:800rpx;height: 500rpx;" />
+</view>

@@ -1,0 +1,6 @@
+<!--pages/api/map02/map02.wxml-->
+<view>
+  <!-- <text>pages/api/map02/map02.wxml</text> -->
+  <button class="Bt" bindtap="getaLocation">获取位置</button>
+  <text>当前经纬度为：{{latitude}}  {{longitude}}</text>
+</view>

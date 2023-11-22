@@ -1,0 +1,8 @@
+/* pages/component/map01/map01.wxss */
+.Bt:not([size='default']){ 
+  background-color: darkcyan;
+  border-radius: 40rpx; 
+  color: white;
+  margin-top: 60rpx;
+  margin-bottom: 30rpx;
+}

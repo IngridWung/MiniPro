@@ -1,0 +1,8 @@
+<!--pages/api/audio01/audio01.wxml-->
+<!-- <text>pages/api/audio01/audio01.wxml</text> -->
+<text>音频：Alana's interview of CMBB</text>
+<button class="Bt" bindtap="audioPlay">播放</button>
+<button class="Bt" bindtap="audioPause">暂停</button>
+<button class="Bt" bindtap="audioStop">停止</button>
+<button class="Bt" bindtap="audio60">播放时间为60s</button>
+<button class="Bt" bindtap="audioStart">回到开头</button>

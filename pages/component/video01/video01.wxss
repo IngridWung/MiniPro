@@ -1,0 +1,35 @@
+/* pages/component/video01/video01.wxss */
+.Bt:not([size='default']){ 
+  background-color: darkcyan;
+  border-radius: 40rpx; 
+  color: white;
+  margin-top: 60rpx;
+  margin-bottom: 30rpx;
+}
+/* pages/video/video.wxss */
+.video {
+  width: 750rpx;
+}
+ 
+.danmu-box {
+  display: flex;
+  border: gray solid 1rpx;
+  border-radius: 3%;
+  margin: 0rpx 5rpx;
+}
+ 
+.danmu {
+  display: flex;
+  padding-left: 20rpx;
+}
+ 
+.txt {
+  margin-top: 8rpx;
+  padding-left: 30rpx;
+}
+ 
+.input {
+  width: 400rpx;
+  margin-top: 8rpx;
+  padding: 0rpx 30rpx;
+}

@@ -1,0 +1,19 @@
+<!--pages/view01/view01.wxml-->
+<text>pages/view01/view01.wxml</text>
+<view>一行三列</view>
+<view class="flex-wrp">
+  <view class="first flew_grow">1</view>
+  <view class="second flew-grow">2</view>
+  <view class="third flew-grow">3</view>
+</view>
+<view>左右混合布局</view>
+<view class="flex-wrp" style="height:400rpx">
+  <view class="first" style="width:33%;height:400rpx;">1</view>
+  <view style="flex-direction: column;flex-grow: 1;">
+    <view class="second flew-grow" style="width: 100%;">2</view>
+    <view style="display: flex;">
+      <view class="third flew-grow" style="width: 50%;">3</view>
+      <view class="forth flew-grow" style="width: 50%;">4</view>
+    </view>
+  </view>
+</view>

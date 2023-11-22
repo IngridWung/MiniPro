@@ -1,0 +1,18 @@
+<view>自动轮播</view>
+<!-- interval:自动切换时间间隔 -->
+<swiper autoplay="true" interval="2000" duration="500">
+   <swiper-item> </swiper-item>
+   <swiper-item> </swiper-item>
+   <swiper-item> </swiper-item>
+</swiper>
+<swiper indicator-dots="true" autoplay="true" interval="2000" duration="500">
+   <swiper-item>
+      <view class="sw1">1</view>
+   </swiper-item>
+   <swiper-item>
+      <view class="sw2">2</view>
+   </swiper-item>
+   <swiper-item>
+      <view class="sw3">3</view>
+   </swiper-item>
+</swiper>

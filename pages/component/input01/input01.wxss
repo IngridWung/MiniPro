@@ -1,0 +1,35 @@
+/* pages/component/input01/input01.wxss */
+.cen{
+  position: absolute;
+  top:150rpx;
+  bottom: 0;
+  left: 20%;
+  right:0;
+  margin:auto;
+
+}
+.titl{
+  font-size: larger;
+  color: cornflowerblue;
+  text-align: center;
+}
+.but{
+  position: absolute;
+  left:-150rpx;
+  bottom:0;
+  top:200rpx;
+  right:0;
+}
+.Bt:not([size='default']){ 
+  background-color: darkcyan;
+  border-radius: 40rpx; 
+  color: white;
+}
+input{
+  border: 1rpx solid lightseagreen;
+  border-radius: 10rpx;
+  width: 400rpx;
+  margin: 0 auto;
+  padding-left: 10rpx;
+  margin-left: 10rpx;
+}

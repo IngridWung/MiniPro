@@ -1,0 +1,6 @@
+/* pages/api/web01/web01.wxss */
+.Bt:not([size='default']){ 
+  background-color: darkcyan;
+  border-radius: 40rpx; 
+  color: white;
+}

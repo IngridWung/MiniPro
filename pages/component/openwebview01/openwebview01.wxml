@@ -1,0 +1,9 @@
+<!--pages/component/openwebview01/openwebview01.wxml-->
+<text>pages/component/openwebview01/openwebview01.wxml</text>
+<view style="height: 40%; width: 40%;align-content: center;"><open-data type="userAvatarUrl"></open-data></view>
+<text>\n用户名：</text>
+<open-data type="userNickName" lang="zh_CN"></open-data>
+<text>\n</text>
+<open-data type="userCity" lang="zh_CN"></open-data>
+
+<open-data type="groupName"  open-gid="2024" default-text="hehehe"  binderror="noData"></open-data>

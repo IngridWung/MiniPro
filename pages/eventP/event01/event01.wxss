@@ -1,0 +1,5 @@
+/* pages/event01/event01.wxss */
+.block{
+  background-color: aqua;
+  font-size: medium;
+}

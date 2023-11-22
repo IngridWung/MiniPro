@@ -1,0 +1,11 @@
+<!--pages/component/video01/video01.wxml-->
+<!-- <text>pages/component/video01/video01.wxml</text> -->
+<video  id="hellovideo" enable-danmu danmu-list="{{danmuList}}" danmu-btn controls src="{{src}}" style="width:100%;"></video>
+<view class="danmu-box">
+  <view class="danmu">
+    <text class="txt" style="color:darkcyan">弹幕:</text>
+    <input class="input" placeholder="请输入弹幕" bindinput="Danmu" />
+    <button class="Bt" style="margin-top:3rpx;margin-bottom:5rpx" bindtap="sendDanmu" size="mini" type="primary">发送</button>
+  </view>
+</view>
+<button class="Bt" type="primary" bindtap="bindButtonTap">选择视频</button>

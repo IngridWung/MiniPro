@@ -1,0 +1,8 @@
+<!--pages/component/map01/map01.wxml-->
+<!-- <text>pages/component/map01/map01.wxml</text> -->
+<view>
+  <text>选择位置：{{name}}\n</text>
+  <text>详细地址：{{add}}\n</text>
+  <text>纬度：{{latitude}}\n</text>
+  <text>经度:{{longitude}}</text>
+</view>

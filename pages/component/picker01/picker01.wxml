@@ -1,0 +1,6 @@
+<!--pages/component/picker01/picker01.wxml-->
+<text>pages/component/picker01/picker01.wxml</text>
+<text>创建2018-2023年日期</text>
+<picker mode="date" value="{{date}}" start="2018-01-01" end="2023-12-31" bindchange="bindDateChange">
+  <view>请选择日期:<text  style="color:skyblue;background-color:steelblue;">{{date}}</text></view>
+</picker>

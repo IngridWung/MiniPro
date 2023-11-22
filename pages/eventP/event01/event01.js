@@ -1,0 +1,100 @@
+// pages/event01/event01.js
+Page({
+
+  /**
+   * 页面的初始数据
+   */
+  data: {
+    number:0,
+    number1:0,
+    inputnumber:0
+  },
+  jumpToAnotherPage(){
+      // wx.switchTab({
+      //   url: '/pages/eventP/event02/event02',
+      // })
+   wx.navigateTo({
+     url: '/pages/eventP/event02/event02',
+       })
+  },
+  // jumpToView(){
+  //   wx.navigateTo({
+  //     url:'/pages/view01/view01.wxml',
+  //   })
+  // },
+  plus(){
+    this.setData({
+      number:this.data.number+1
+    })
+  },
+  getInput:function(e){
+      console.log(e);
+      // console.log("输入:"+this.data.inputnumber);
+      this.setData({
+        inputnumber: e.detail.value})
+      // console.log("输入:"+this.data.inputnumber);
+    },
+  chuancan:function(e){
+      console.log(e);//在控制台输出信息
+  //    console.log("输入为"+this.data.number);
+      this.setData({
+        number1:e.currentTarget.dataset.number
+      })
+      // console.log()
+  },
+  /**
+   * 生命周期函数--监听页面加载
+   */
+  onLoad(options) {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面初次渲染完成
+   */
+  onReady() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面显示
+   */
+  onShow() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面隐藏
+   */
+  onHide() {
+
+  },
+
+  /**
+   * 生命周期函数--监听页面卸载
+   */
+  onUnload() {
+
+  },
+
+  /**
+   * 页面相关事件处理函数--监听用户下拉动作
+   */
+  onPullDownRefresh() {
+
+  },
+
+  /**
+   * 页面上拉触底事件的处理函数
+   */
+  onReachBottom() {
+
+  },
+
+  /**
+   * 用户点击右上角分享
+   */
+  onShareAppMessage() {
+
+  }
+})

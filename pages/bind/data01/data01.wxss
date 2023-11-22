@@ -1,0 +1,13 @@
+/* pages/data01/data01.wxss */
+view{
+  padding: 1px;
+}
+.pri-title{
+  padding:5px;
+  color:cadetblue;
+  font-weight: bold;
+}
+.sec-title{
+  padding:2px;
+  color:cornflowerblue;
+}

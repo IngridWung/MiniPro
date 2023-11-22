@@ -1,0 +1,8 @@
+/* pages/api/photo01/photo01.wxss */
+.Bt:not([size='default']){ 
+  background-color: darkcyan;
+  border-radius: 40rpx; 
+  color: white;
+  margin-top: 30rpx;
+  margin-bottom: 30rpx;
+}

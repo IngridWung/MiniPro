@@ -1,0 +1,148 @@
+<!--pages/data01/data01.wxml-->
+<text>pages/data01/data01.wxml</text>
+
+<text space="nbsp">这是【{{ title }}】</text>
+<view class="pri-title">一：数据绑定 获取数据</view>
+<!-- view是块级标签 -->
+<!-- <view>-----------------------------</view> -->
+<view>
+    <text space="nbsp">{{ListArr[0]}}  |  </text>
+    <text space="nbsp">{{ListArr[1]}}  |  </text>
+    <text space="nbsp">{{ListArr[2]}}</text>
+</view>
+<!-- <view>-----------------------------</view> -->
+<view>
+    <text space="nbsp">{{obj.name}}  |  </text>
+    <text space="nbsp">{{obj.gender}}  |  </text>
+    <text space="nbsp">{{obj.age}}    </text>
+</view>
+<view class="pri-title"><text>二、运算：</text></view>
+
+<view class="sec-title">1、算数运算</view>
+<view><text>{{a + b}} + {{c}} + 1 = ? </text></view>
+<view>--->能全部括上吗</view>
+<view>a + b + c + d + 1 = {{a + b + c + d + 1}} ->取不出来的</view>
+<view></view>
+
+<view class="sec-title">2、三元运算</view>
+<!-- 注意：showtext是取值，所以需要花括号 -->
+<view>今天去散步吗？改变showtext值告诉我结果</view>
+<view>{{showtext ? '今天去散步' : '今天先不去散步了'}}</view>
+
+<view class="sec-title">3、逻辑运算if判断</view>
+<view wx:if="{{showtext == 0}}">
+  <view>showtext 的值为0</view> 
+</view>
+<view wx:else><view>showtext 的值不为0</view></view>
+<view class="sec-title">4、字符串运算</view>
+<view>{{"现在位于:" + title}}</view>
+<view class="sec-title">5.数据路径计算 数组</view>
+<view>  {{ListArr}}</view>
+<view>{{obj.name}} {{obj.gender}} {{obj.age}}</view>
+
+<view class="pri-title">三、组合</view>
+<view class="sec-title">1、将js数据传入数组</view>
+<view>eg: [a,b,c,4]</view>
+<view wx:for="{{[a,b,c,4]}}">{{item}}</view>
+<!-- item是数组的别名 -->
+<view class="sec-title"><text>\n 2、模板</text></view>
+<view class="sec-title">法一</view>
+<template name="combineOne">
+  <view>
+    <text>title:{{title}}\n</text>
+    <text>showtext的值:{{showtext}}</text>
+  </view>
+</template>
+<template is="combineOne" data="{{title:title, showtext:showtext}}"></template>
+<view>如果左右名称不同，是否会改变？</view>
+<template is="combineOne" data="{{nameOfTitle:title, a:showtext}}"></template>
+<view>---就不好用了</view>
+<view class="sec-title">法二</view>
+<template name="combineTwo">
+  <view>
+    <text>姓名:{{name}}\n</text>
+    <text>性别:{{gender}}\n</text>
+    <text>年龄:{{age}}\n\n</text>
+    <text>姓名:{{name1}}\n</text>
+    <text>性别:{{gender1}}\n</text>
+    <text>年龄:{{age1}}\n</text>
+  </view>
+</template>
+<template is="combineTwo" data="{{...obj,...obj1}}"></template>
+<view class="sec-title">法三</view>
+<view>key与value相同时可以只写key</view>
+<template name="combineThree">
+  <view>
+    <text>data1:{{data1}}\n</text>
+    <text>data2:{{data2}}</text>
+  </view>
+</template>
+<template is="combineThree" data="{{data1,data2}}"></template>
+<view class="sec-title">同名属性，后者覆盖前者</view>
+<view>对后面的obj1数值进行改变，结果也发生变化30->32</view>
+<view class="sec-title">花括号引号间有空格，会被解析成字符串</view>
+<view wx:for="{{[a,b]}} ">{{item}}</view>
+<view wx:for="{{[a,b]}}+' '">{{item}}</view>
+<view class="pri-title">四、列表</view>
+<view  class="sec-title"><text>1、for \n index:下标</text></view>
+<view wx:for="{{Arr1}}">
+  {{index}}:{{item.message}}
+</view>
+<view  class="sec-title">改名：wx:for-index wx:for-item</view>
+<view wx:for="{{Arr1}}" wx:for-index="arrInd" wx:for-item="arrIte">
+  {{arrInd}}:{{arrIte.message}}
+</view>
+<view class="sec-title">嵌套遍历[[1,2,3],[4,5,6]] </view>
+<!-- Arr2:[[1,2,3],[4,5,6]] ArrIte1=2 ArrIte2=3 -->
+<view wx:for="{{Arr2}}" wx:for-index="ArrInd1" wx:for-item="ArrIte1">
+  <view wx:for="{{ArrIte1}}" wx:for-index="ArrInd2" wx:for-item="ArrIte2">
+    {{ArrIte2}}
+  </view>
+</view>
+<view class="sec-title">分块 </view>
+<block wx:for="{{Arr1}}">
+  <view>{{index}}:</view>
+  <view>{{item.message}}</view>
+</block>
+<view class="pri-title">五、条件渲染</view>
+<view wx:if="showtext">showtext为1</view>
+<view wx:if="！showtext">showtext不为0</view>
+<!-- 注意 判断时需要花括号 -->
+<view wx:if="{{showtext==0}}">showtext等于0</view>
+  <view wx:else>showtext不等于0</view>
+<view class="sec-title">分块 </view>
+<block wx:if="{{showtext==1}}">
+  <view>没错</view>
+  <view>showtext确实等于1</view>
+</block>
+<view class="pri-title">六、模板</view>
+<view class="sec-title">模板嵌套</view>
+<template name="t1">
+  <view>这是模板1</view>
+</template>
+
+<template name="t2">
+  <view>这是模板2</view>
+  <template is="t1"></template>
+  <view>上面是嵌套的模板1</view>
+</template>
+
+<template is="t2"></template>
+<view class="sec-title">动态选择模板</view>
+<template name="t3">
+  <view>这是模板3</view>
+</template>
+<block wx:for="{{[1,2,3,4,5]}}">
+  <template is="{{(item+1) %2==0 ? 't1':'t3'}}">
+  <!-- 注意上面是template 不是view -->
+  </template>
+</block>
+
+<view class="pri-title">六、引用</view>
+<view>见data2 data3</view>
+<view><text>note:需要展示页面：\n 
+  本页：    "pages/data01/data01",
+  引用1：    "pages/data02/data03",
+  引用2：    "pages/data03/cite03",
+  引用3：    "pages/data03/cite04",
+</text></view>

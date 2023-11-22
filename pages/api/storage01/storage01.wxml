@@ -1,0 +1,10 @@
+<!--pages/api/storage01/storage01.wxml-->
+<!-- <text>pages/api/storage01/storage01.wxml</text> -->
+<view>
+  <text>信息存储到本地缓存中\n</text>
+  <button class="Bt" bindtap="storage">点击存储</button>
+  <text>姓名:{{tname}}\n</text>
+  <text>密码:{{tpass}}\n</text>
+  <text>新增信息:性别:{{tgender}}\n</text>
+  <button class="Bt" bindtap="remove">点击移除</button>
+</view>

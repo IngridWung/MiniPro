@@ -1,0 +1,15 @@
+/* pages/term01/term01.wxss */
+ .Bt:not([size='default']){ 
+  background-color: darkcyan;
+  border-radius: 40rpx; 
+  color: white;
+  /* display: flex; 
+  align-items: center; justify-content: center; 
+  background-color: red; 
+  margin-top: 15rpx; 
+  padding: 0rpx; 
+  width:200rpx; 
+  height:70rpx; 
+  border-radius: 40rpx; 
+    */
+}

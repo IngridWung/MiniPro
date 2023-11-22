@@ -1,0 +1,13 @@
+<!--pages/api/photo01/photo01.wxml-->
+<!-- <text>pages/api/photo01/photo01.wxml</text> -->
+<view>
+  <view>
+    <camera device-position="back" flash="off" binderror="error" style="width: 100%;height:500rpx;"></camera>
+    <button class="Bt" type="primary" bindtap="takePhoto">拍照</button>
+    <button class="Bt" type="primary" bindtap="startRecord">开始录像</button>
+    <button class="Bt" type="primary" bindtap="stopRecord">结束录像</button>
+  </view>
+  <view style="align-items: center;">预览</view>
+  <image wx:if="{{src}}" mode="widthFix" src="{{src}}"></image>
+  <video wx:if="{{videoSrc}}" class="video" src="{{videoSrc}}"></video>
+</view>

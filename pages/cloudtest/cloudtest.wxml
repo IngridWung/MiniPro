@@ -1,0 +1,15 @@
+<!--pages/cloudtest/cloudtest.wxml-->
+<!-- <text>pages/cloudtest/cloudtest.wxml</text> -->
+<view>
+  <view>{{openId}}</view>
+  <button class="Bt" bindtap="getOpenId">获取openId</button>
+  <view>输入姓名：<input bindinput="getInputName"></input>
+  <!-- 注意这里是bindinput -->
+  输入学号：<textarea bindinput="getInputNum" auto-height></textarea></view>
+  <button class="Bt" bindtap="addDB">添加数据</button>
+  <button class="Bt" bindtap = "getDB">连接数据库</button>
+  <text>{{addName}}{{addNum}}</text>
+  <view wx:for="{{messagelist}}" wx:key="{{_id}}">
+    <text>{{item.name}}  {{item.number}}</text>
+  </view>
+</view>
