@@ -1,4 +1,5 @@
 <!--pages/component/image01/image01.wxml-->
 <!-- <text>pages/component/image01/image01.wxml</text> -->
 <view class="title">雪中村庄</view>
-<image src="/pages/pics/town_in_snow.jpg" mode="aspectFit"></image>
+<!-- <image src="/pages/pics/town_in_snow.jpg" mode="aspectFit"></image> -->
+<image src="cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/town_in_snow.jpg" mode="aspectFit"></image>

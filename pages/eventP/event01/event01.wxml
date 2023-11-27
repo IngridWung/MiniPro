@@ -1,11 +1,14 @@
 <!--pages/event01/event01.wxml-->  
 <!-- <text>pages/event01/event01.wxml</text> -->
-<button type="primary" bindtap="jumpToAnotherPage">点击跳转</button>
-<button bindtap="plus">累加</button>
+<view><text>\n</text></view>
+<button class="Bt" bindtap="jumpToAnotherPage">点击跳转</button>
+<view><text>\n</text></view>
+<button class="Bt" bindtap="plus">累加</button>
 <view>{{number}}</view>
 
-<view class="block"><input bindinput="getInput" style="color:royalblue"/></view>
-<view style="color:red">你输入的是：{{inputnumber}}</view>
-<button bindtap="chuancan" data-number="233">点击传参（233）</button>
+<view class="block"><input bindinput="getInput" style="color:white"/></view>
+<view style="color:teal">你输入的是：{{inputnumber}}</view>
+<view><text>\n</text></view>
+<button class="Bt" bindtap="chuancan" data-number="233">点击传参（233）</button>
 <view>{{number1}}</view>
 <!-- <button type="primary" bindtype="jumpToView">View组件</button> -->

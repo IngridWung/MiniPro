@@ -1,5 +1,10 @@
 /* pages/event01/event01.wxss */
 .block{
-  background-color: aqua;
+  background-color: darkcyan;
   font-size: medium;
+}
+.Bt:not([size='default']){ 
+  background-color: darkcyan;
+  border-radius: 40rpx; 
+  color: white;
 }

@@ -1,5 +1,5 @@
 <!--pages/data01/data01.wxml-->
-<text>pages/data01/data01.wxml</text>
+<!-- <text>pages/data01/data01.wxml</text> -->
 
 <text space="nbsp">这是【{{ title }}】</text>
 <view class="pri-title">一：数据绑定 获取数据</view>

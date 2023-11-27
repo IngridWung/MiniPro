@@ -10,4 +10,6 @@
 } 
 page{
   background: -webkit-linear-gradient(top,#69fcfc,#9ce7f5,white);
+  max-height: 100%;
+  background-attachment: fixed;
 }

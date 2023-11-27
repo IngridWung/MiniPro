@@ -1,6 +1,6 @@
 <!--pages/term01/term01.wxml-->
 <view>
-  <text>pages/term01/term01.wxml\n</text>
+  <!-- <text>pages/term01/term01.wxml\n</text> -->
   <text style="color: teal;font-size: large;font-weight: 300;">组件\n</text>
 <view>
   <button class="Bt" bindtap="jumpToView1" size="mini">布局</button>
