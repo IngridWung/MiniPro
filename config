@@ -1,0 +1,16 @@
+[core]
+	repositoryformatversion = 0
+	filemode = false
+	bare = false
+	logallrefupdates = true
+	symlinks = false
+	ignorecase = true
+[user]
+	name = IngridWung
+	email = ingridwungwork@gmail.com
+[remote "origin"]
+	url = https://gitee.com/IngridWung/mini-p.git
+	fetch = +refs/heads/*:refs/remotes/origin/*
+[remote "MiniPro"]
+	url = https://github.com/IngridWung/MiniPro.git
+	fetch = +refs/heads/*:refs/remotes/MiniPro/*
