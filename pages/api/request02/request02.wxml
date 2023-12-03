@@ -1,0 +1,7 @@
+<!--pages/api/request02/request02.wxml-->
+<!-- <text>pages/api/request02/request02.wxml</text> -->
+<view class="container">
+  <text class="title">Bing必应</text>
+  <input class="input" type="text" placeholder="请输入搜索关键词" bindinput="inputChange" />
+  <button class="Bt" bindtap="forSubmit">搜索</button>
+</view>

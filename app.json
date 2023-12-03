@@ -20,6 +20,8 @@
     "pages/component/popup01/popup01",
     "pages/component/popup02/popup02",
     "pages/api/request01/request01",
+    "pages/api/request02/request02",
+    "pages/api/request02/bing01",
     "pages/api/file01/file01",
     "pages/api/storage01/storage01",
     "pages/api/map02/map02",

@@ -5,14 +5,14 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+//    q:'微信小程序'//这是对搜索内容的请求
   },
  forSubmit:function(){
   wx.request({
     url:'https://cn.bing.com', //必填，其他的都可以不填
     data:{  
-       a:1, 
-       b:2
+      a:1, 
+      b:2,
     },
     header:{  
        'content-type':'application/json'
@@ -27,7 +27,8 @@ Page({
         console.log('fail')
     },
     complete(){   
-         console.log('complete')   
+         console.log('complete'),
+         console.log('已向bing.com发送请求')
     }
   })
  },
@@ -42,6 +43,11 @@ Page({
     })   
     requestTask.abort()// 取消请求任务
  },
+  JumpToBing01(){
+    wx.navigateTo({
+      url: '/pages/api/request02/request02',
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

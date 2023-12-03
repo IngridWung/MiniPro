@@ -1,5 +1,6 @@
 // pages/cloudtest/cloudtest.js
 const db = wx.cloud.database();
+
 Page({
 
   /**
@@ -8,8 +9,8 @@ Page({
   data: {
     openId:"",
     messagelist:[],
-    addName:"",
-    addNum:""
+    addName:'',
+    addNum:''
   },
   getOpenId:function(){
     var that = this;
@@ -28,8 +29,7 @@ Page({
       // }
     })
   },
-  getDB:function(){//
-//    const db = wx.cloud.database();
+  getDB:function(){
     console.log("messagelist:",this.data.messagelist);
     var that = this;/////
     db.collection('datatest').get().then(res =>{
@@ -45,37 +45,31 @@ Page({
   getInputName:function(e){
     console.log(e);
     this.setData({
-      addName: e.detail.value})
+      addName: e.detail.value})///////
   },
   getInputNum:function(e){
     console.log(e)
     this.setData({
-      addNum: e.detail.value})
+      addNum: e.detail.value})///////////
   },
 
-  addDB:function(e){/////////////new 未弄好
+  addDB:function(e){
+    var that = this;
     db.collection('datatest').add({
       data:{
   //      description:"新增数据",
-      //  name:addName,
-      //  number:addNum
-      name:"hello",
-      number:"2000"
+       name:this.data.addName,
+       number:this.data.addNum////之前一直没加this
+      // name:"hello",
+      // number:"2000"
       },
       success:function (res){
         console.log("连接成功")
         console.log(res)
-        // that.setData({////
-        //   messagelist:res.data
-        // })
+        that.getDB();//////
       }
     })
-    // .then(res => {
-    //   console.log(res)
-    // })
-    // .catch(console.error)
   },
-
 
   /**
    * 生命周期函数--监听页面加载

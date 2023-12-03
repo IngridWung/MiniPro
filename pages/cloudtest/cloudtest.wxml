@@ -8,7 +8,7 @@
   输入学号：<textarea bindinput="getInputNum" auto-height></textarea></view>
   <button class="Bt" bindtap="addDB">添加数据</button>
   <button class="Bt" bindtap = "getDB">连接数据库</button>
-  <text>{{addName}}{{addNum}}</text>
+  <!-- <text>{{addName}}{{addNum}}</text> -->
   <view wx:for="{{messagelist}}" wx:key="{{_id}}">
     <text>{{item.name}}  {{item.number}}</text>
   </view>

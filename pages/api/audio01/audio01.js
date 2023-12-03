@@ -16,7 +16,9 @@ Page({
   onLoad:function(options) {
     audioCtx =    wx.createInnerAudioContext();
     audioCtx.autoplay = true
-    audioCtx.src = '/pages/videos/alana_cmbb.mp3'
+    // audioCtx.src = '/pages/videos/alana_cmbb.mp3'
+    // cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/audio/alana_cmbb.mp3
+    audioCtx.src = "cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/audio/alana_cmbb.mp3"
     audioCtx.onPlay(()=>{
       console.log("开始播放")
     })
