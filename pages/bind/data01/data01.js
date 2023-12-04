@@ -21,6 +21,34 @@ Page({
     b:2,
     c:3
   },
+  jumpToAnotherPage(){
+    // wx.switchTab({
+    //   url: '/pages/eventP/event02/event02',
+    // })
+ wx.navigateTo({
+   url: '/pages/eventP/event02/event02',
+     })
+  },
+  plus(){
+    this.setData({
+      number:this.data.number+1
+    })
+  },
+  getInput:function(e){
+      console.log(e);
+      // console.log("输入:"+this.data.inputnumber);
+      this.setData({
+        inputnumber: e.detail.value})
+      // console.log("输入:"+this.data.inputnumber);
+    },
+  chuancan:function(e){
+      console.log(e);//在控制台输出信息
+  //    console.log("输入为"+this.data.number);
+      this.setData({
+        number1:e.currentTarget.dataset.number
+      })
+      // console.log()
+  },
 
   /**
    * 生命周期函数--监听页面加载

@@ -63,12 +63,12 @@ Page({
       url: '/pages/component/canvas01/canvas01',
     })
   },
-  jumpToOpenjumpToOpenAndWeb(){
+  jumpToOpenAndWeb(){
     wx.navigateTo({
       url: '/pages/component/openwebview01/openwebview01',
     })
   },
-  jumpToOpenjumpToWeb(){
+  jumpToOpenWeb(){
     wx.navigateTo({
       url: '/pages/component/openwebview01/openwebview011',
     })

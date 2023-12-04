@@ -1,6 +1,7 @@
 <!--pages/component/picker01/picker01.wxml-->
-<text>pages/component/picker01/picker01.wxml</text>
-<text>创建2018-2023年日期</text>
+<!-- <text>pages/component/picker01/picker01.wxml</text> -->
+<!-- <text>创建2018-2023年日期</text> -->
+<view style="text-align: center;margin-top: 10rpx;"><text style="color: teal;font-size:larger;font-weight: 800;">选择2018-2023年日期\n\n</text></view>
 <picker mode="date" value="{{date}}" start="2018-01-01" end="2023-12-31" bindchange="bindDateChange">
-  <view>请选择日期:<text  style="color:skyblue;background-color:steelblue;">{{date}}</text></view>
+  <view style="color: teal;font-size:large;font-weight: 600;">请选择日期:<text  style="color:white;background-color:steelblue;">{{date}}</text></view>
 </picker>

@@ -11,3 +11,12 @@ view{
   padding:2px;
   color:cornflowerblue;
 }
+.block{
+  background-color: darkcyan;
+  font-size: medium;
+}
+.Bt:not([size='default']){ 
+  background-color: darkcyan;
+  border-radius: 40rpx; 
+  color: white;
+}

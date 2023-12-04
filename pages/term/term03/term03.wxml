@@ -1,23 +1,26 @@
 <!--pages/term/term03/term03.wxml-->
 <!-- <text>pages/term/term03/term03.wxml</text> -->
 <view>
-  <text style="color: teal;font-size: large;font-weight: 300;">API\n\n</text>
-  <view>
+  <view style="text-align: center;margin-top: 10rpx;"><text style="color: teal;font-size:x-large;font-weight: 1000;">API\n\n</text></view>
+  <view style="margin-left: 75rpx;">
     <button class="Bt" bindtap="jumpToRequest01" size="mini">https</button>
     <button class="Bt" bindtap="jumpToFile01" size="mini">文件</button>
     <button class="Bt" bindtap="jumpToweb01" size="mini">web</button>
   </view>
   <text>\n</text>
-  <view>
+  <view style="margin-left: 75rpx;">
     <button class="Bt" bindtap="jumpToAudio01" size="mini">音频</button>
     <button class="Bt" bindtap="jumpToVideo"size="mini">视频</button>
     <button class="Bt" bindtap="jumpToPhoto01"size="mini">相机</button>
-    <button class="Bt" bindtap="jumpToPhoto02"size="mini">图片</button>
   </view>
-  <view>
+  <view style="margin-left: 75rpx;">
   <text>\n</text>
+  <button class="Bt" bindtap="jumpToPhoto02"size="mini">图片</button>
    <button class="Bt" bindtap="jumpToStorage01" size="mini">缓存</button>
     <button class="Bt" bindtap="jumpToMap" size="mini">地图</button>
+  </view>
+  <view style="margin-left: 270rpx;">
+  <text>\n</text>
     <button class="Bt" bindtap="jumpToMap02" size="mini">定位</button>
   </view>
 </view>

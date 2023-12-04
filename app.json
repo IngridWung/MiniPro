@@ -4,6 +4,7 @@
     "pages/term/term01/term01",
     "pages/term/term02/term02",
     "pages/term/term03/term03",
+    "pages/term/term04/term04",
     "pages/component/radio01/radio01",
     "pages/component/view01/view01",
     "pages/component/view01/view011",
@@ -44,10 +45,15 @@
     "navigationBarTitleText": "小程序",
     "navigationBarTextStyle": "white"
   },
-  "style": "v2",
   "sitemapLocation": "sitemap.json",
   "tabBar": {
     "list": [
+      {
+        "pagePath": "pages/term/term02/term02",
+        "text": "主页",
+        "iconPath": "pages/pics/icon/事件管理.png",
+        "selectedIconPath": "pages/pics/icon/事件管理.png"
+      },
       {
         "pagePath": "pages/term/term01/term01",
         "text": "组件",
@@ -67,14 +73,8 @@
         "selectedIconPath": "pages/pics/icon/云.png"
       },
       {
-        "pagePath": "pages/eventP/event01/event01",
-        "text": "事件触发",
-        "iconPath": "pages/pics/icon/事件管理.png",
-        "selectedIconPath": "pages/pics/icon/事件管理.png"
-      },
-      {
         "pagePath": "pages/bind/data01/data01",
-        "text": "模板文件",
+        "text": "模板&事件",
         "iconPath": "pages/pics/icon/绑定.png",
         "selectedIconPath": "pages/pics/icon/绑定.png"
       }

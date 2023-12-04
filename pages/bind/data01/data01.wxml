@@ -138,11 +138,23 @@
   </template>
 </block>
 
-<view class="pri-title">六、引用</view>
+<!-- <view class="pri-title">六、引用</view>
 <view>见data2 data3</view>
 <view><text>note:需要展示页面：\n 
   本页：    "pages/data01/data01",
   引用1：    "pages/data02/data03",
   引用2：    "pages/data03/cite03",
   引用3：    "pages/data03/cite04",
-</text></view>
+</text></view> -->
+
+<view><text>\n</text></view>
+<button class="Bt" bindtap="jumpToAnotherPage">点击跳转</button>
+<view><text>\n</text></view>
+<button class="Bt" bindtap="plus">累加</button>
+<view>{{number}}</view>
+
+<view class="block"><input bindinput="getInput" style="color:white"/></view>
+<view style="color:teal">你输入的是：{{inputnumber}}</view>
+<view><text>\n</text></view>
+<button class="Bt" bindtap="chuancan" data-number="233">点击传参（233）</button>
+<view>{{number1}}</view>

@@ -1,7 +1,7 @@
 <!--pages/component/navigator01/navigator01.wxml-->
 <!-- <text>pages/component/navigator01/navigator01.wxml</text> -->
-<text style="font-weight: 600;font-size: larger;">导航组件</text>
-<view>
+<view style="text-align: center;margin-top: 10rpx;"><text style="color: teal;font-size:x-large;font-weight: 1000;">导航组件\n\n</text></view>
+<view style="font-size: large; margin-left: 20rpx;color:mediumpurple;font-weight: 600;">
   <navigator url="../image01/image01">点击跳转到图片</navigator>
   <navigator url="../picker01/picker01" open-type="redirect">重新定向到选择日期页面</navigator>
 </view>

@@ -1,8 +1,10 @@
 /* pages/term01/term01.wxss */
- .Bt:not([size='default']){ 
+ /* .Bt:not([size='default']){  */
+.Bt:not([size='default']){
   background-color: darkcyan;
   border-radius: 40rpx; 
   color: white;
+  font-size:large;
   /* display: flex; 
   align-items: center; justify-content: center; 
   background-color: red; 

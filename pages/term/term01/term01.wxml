@@ -1,27 +1,36 @@
 <!--pages/term01/term01.wxml-->
 <view>
   <!-- <text>pages/term01/term01.wxml\n</text> -->
-  <text style="color: teal;font-size: large;font-weight: 300;">组件\n</text>
-<view>
+  <view style="text-align: center;margin-top: 10rpx;"><text style="color: teal;font-size:x-large;font-weight: 1000;">组件\n\n</text></view>
+<view style="margin-left: 75rpx;">
   <button class="Bt" bindtap="jumpToView1" size="mini">布局</button>
   <button class="Bt" bindtap="jumpToView2" size="mini">轮播</button>
   <button class="Bt" bindtap="jumpToView3" size="mini">滚动</button>
+  
+
+</view>
+<view style="margin-left: 75rpx;">
+<!-- <view style="display: flex; justify-content: center;"> -->
+  <text>\n</text>
   <button class="Bt" bindtap="jumpToRadio" size="mini">选项</button>
   <button class="Bt" bindtap="jumpToPicker" size="mini">日期</button>
-</view>
-<view>
-  <text>\n</text>
   <button class="Bt" bindtap="jumpToImage" size="mini">图片</button>
+</view>
+<view style="margin-left: 75rpx;">
+  <text>\n</text>
   <button class="Bt" bindtap="jumpToInput" size="mini">输入</button>
   <button class="Bt" bindtap="jumpToMap" size="mini">地图</button>
   <button class="Bt" bindtap="jumpToNavigator" size="mini">导航</button>
-  <button class="Bt" bindtap="jumpToVideo"size="mini">视频</button>
 </view>
-<view>
+<view style="margin-left: 75rpx;">
   <text>\n</text>
+  <button class="Bt" bindtap="jumpToVideo"size="mini">视频</button>
   <button class="Bt" bindtap="jumpToCanvas" size="mini">画布</button>
-  <button class="Bt" bindtap="jumpToOpenjumpToOpenAndWeb" size="mini">用户</button>
-  <button class="Bt" bindtap="jumpToOpenjumpToWeb" size="mini">web</button>
+  <button class="Bt" bindtap="jumpToOpenAndWeb" size="mini">用户</button>
+</view>
+<view style="margin-left: 75rpx;">
+  <text>\n</text>
+  <button class="Bt" bindtap="jumpToOpenWeb" size="mini">web</button>
   <button class="Bt" bindtap="jumpToPopUp01" size="mini">弹窗</button>
   <button class="Bt" bindtap="jumpToPopUp02" size="mini">自定义</button>
 </view>

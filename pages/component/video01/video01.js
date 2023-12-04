@@ -58,6 +58,9 @@ Page({
         text: inputvalue,
         color: getRandomColor()
       })
+      this.setData({//清空输入栏
+        inputValue: ''
+      })
     },
 
   /**

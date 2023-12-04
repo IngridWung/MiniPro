@@ -1,0 +1,41 @@
+<!--pages/term/term04/term04.wxml-->
+<!-- <text>pages/term/term04/term04.wxml</text> -->
+<!-- pages/index/index.wxml -->
+<view class="container">
+  <!-- 图片轮播 -->
+  <swiper autoplay="true" interval="3000" duration="500">
+    <block wx:for="{{imageUrls}}" wx:key="*this">
+      <swiper-item>
+        <image src="{{item}}" class="slide-image" />
+      </swiper-item>
+    </block>
+  </swiper>
+
+  <!-- 图片滚动 -->
+  <scroll-view scroll-x="true" class="scroll-view">
+    <block wx:for="{{imageUrls}}" wx:key="*this">
+      <image src="{{item}}" class="scroll-image" />
+    </block>
+  </scroll-view>
+
+  <!-- 选项和日期的选择 -->
+  <picker mode="date" value="{{date}}" start="2018-01-01" end="2023-12-31" bindchange="bindDateChange">
+    <view class="picker">请选择日期: <text class="date">{{date}}</text></view>
+  </picker>
+
+  <!-- 视频的播放以及弹幕的显示与发送 -->
+  <video id="video" src="{{videoUrl}}" danmu-list="{{danmuList}}" danmu-btn controls></video>
+  <view class="danmu">
+    <input placeholder="请输入弹幕" bindinput="Danmu" value="{{danmuInput}}" />
+    <button bindtap="sendDanmu">发送弹幕</button>
+  </view>
+
+  <!-- Bing搜索的跳转 -->
+  <view class="search">
+    <input placeholder="请输入搜索关键词" bindinput="Search" value="{{searchInput}}" />
+    <button bindtap="searchBing">搜索 Bing</button>
+  </view>
+
+  <!-- 用户可以输入反馈建议的弹窗 -->
+  <button bindtap="openFeedbackDialog">反馈建议</button>
+</view>

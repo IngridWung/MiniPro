@@ -4,9 +4,9 @@
 <!-- 让外层变暗，并且触碰无效 -->
  
 <view class="modal" wx:if="{{showModal}}">
-    <image src="cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/town_in_snow.jpg" style="width: 500rpx;height: 400rpx;"/>
+    <image src="cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/town_in_snow.jpg" style="width: 500rpx;height: 400rpx;margin-top: 30rpx;"/>
     <text>\n确定要关闭弹窗吗</text>
-    <button class="Bt" bindtap="close" type="primary">关闭</button>
+    <button class="Bt" bindtap="close" type="primary" style="margin-bottom: 15rpx;">关闭</button>
 </view>
  
-<button class="Bt" bindtap="submit" type="mini" style="position: absolute;top:500rpx;bottom: 580rpx;left: 0;right: 0;">打开弹窗</button>
+<button class="Bt" bindtap="submit" type="mini" style="position: absolute;top:40%;left: 0;right: 0;">打开弹窗</button>

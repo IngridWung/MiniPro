@@ -8,7 +8,9 @@ Page({
     scrollIntoView: '',  // 滚动到指定位置
     socketOpen: false,  // WebSocket连接状态
     socketMsgQueue: [],  // WebSocket消息队列
-    url: 'wss://example.com/ws'  // WebSocket服务器地址
+//    url: 'wss://example.com/ws'  // WebSocket服务器地址
+    //ws://124.222.224.186:8800
+    url: 'ws://124.222.224.186:8800'  // WebSocket服务器地址
   },
   /**
    * 生命周期函数--监听页面加载

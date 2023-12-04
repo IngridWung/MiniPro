@@ -1,4 +1,7 @@
 <!--pages/component/openwebview01/openwebview011.wxml-->
-<text>pages/component/openwebview01/openwebview011.wxml</text>
+<!-- <text>pages/component/openwebview01/openwebview011.wxml</text>
 <text> 个人不支持web view</text>
-<web-view src="https://www.bing.com/"></web-view>
+<web-view src="https://www.bing.com/"></web-view> -->
+<view class="container">
+  <button bindtap="forSubmit" class="Bt">打开Bing</button>
+</view>

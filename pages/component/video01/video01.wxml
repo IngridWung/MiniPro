@@ -4,7 +4,7 @@
 <view class="danmu-box">
   <view class="danmu">
     <text class="txt" style="color:darkcyan">弹幕:</text>
-    <input class="input" placeholder="请输入弹幕" bindinput="Danmu" />
+    <input class="input" placeholder="请输入弹幕" bindinput="Danmu" value="{{inputValue}}"/>
     <button class="Bt" style="margin-top:3rpx;margin-bottom:5rpx" bindtap="sendDanmu" size="mini" type="primary">发送</button>
   </view>
 </view>

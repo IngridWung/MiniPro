@@ -3,4 +3,5 @@
   background-color: darkcyan;
   border-radius: 40rpx; 
   color: white;
+  font-size:large;
 }
