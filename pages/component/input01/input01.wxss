@@ -14,16 +14,20 @@
   text-align: center;
 }
 .but{
-  position: absolute;
+  /* position: absolute;
   left:-150rpx;
   bottom:0;
   top:200rpx;
-  right:0;
+  right:0; */
+  align-items: center;
+  margin-left: 40%;
+  margin-top: 8%;
 }
 .Bt:not([size='default']){ 
   background-color: darkcyan;
   border-radius: 40rpx; 
   color: white;
+  width: 450rpx;
 }
 input{
   border: 1rpx solid lightseagreen;
@@ -32,4 +36,10 @@ input{
   margin: 0 auto;
   padding-left: 10rpx;
   margin-left: 10rpx;
+}
+t-input{
+  background-color: skyblue;
+}
+t-button{
+  color: darkcyan;
 }

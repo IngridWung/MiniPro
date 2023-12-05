@@ -5,4 +5,5 @@
   <button class="Bt" type="mini" bindtap="chooseImage">上传照片</button>
   <text>下载文件</text>
   <button class="Bt" type="mini" bindtap="downloadF">下载文件</button>
+  <image src="{{imageUrl}}" style="width: 100%; margin-top:50rpx"></image>
 </view>

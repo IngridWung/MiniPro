@@ -21,7 +21,7 @@ Page({
               wx.showToast({
                 title: '链接已复制',
                 icon: 'success',
-                duration: 2000
+                duration: 2000///2s
               });
             }
           });

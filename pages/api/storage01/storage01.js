@@ -42,6 +42,11 @@ Page({
       success:function(res){
         console.log("已删除")
       }
+  })
+  this.setData({//清空一下数据
+    tname:null,
+    tpass:null,
+    tgender:null
   })  
   },
 

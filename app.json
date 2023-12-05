@@ -1,8 +1,8 @@
 {
   "cloud": true,
   "pages": [
-    "pages/term/term01/term01",
     "pages/term/term02/term02",
+    "pages/term/term01/term01",
     "pages/term/term03/term03",
     "pages/term/term04/term04",
     "pages/component/radio01/radio01",

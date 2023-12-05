@@ -25,7 +25,7 @@ Page({
         color: '#ffffff'
       },
       {
-        text: '终于看到Alana了！',
+        text: '天呐太美了！',
         time:2,
         color: '#ffffff'
       },

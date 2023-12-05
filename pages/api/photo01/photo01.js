@@ -5,7 +5,9 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    src: '',
+    videoSrc: '',
+    devicePosition: 'back',///转换摄像头
   },
 
   /**
@@ -45,6 +47,11 @@ Page({
   error(e){
     console.log(e.detail)
   },
+  switchCamera() { //转换摄像头
+    this.setData({
+      devicePosition: this.data.devicePosition === 'back' ? 'front' : 'back'
+    });
+  }, 
 
   /**
    * 生命周期函数--监听页面初次渲染完成
