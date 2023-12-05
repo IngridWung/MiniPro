@@ -1,6 +1,34 @@
 // pages/term/term02/term02.js
-const image = 'https://tdesign.gtimg.com/miniprogram/images/example2.png';
-const items = new Array(12).fill({ label: '标题文字', image }, 0, 12);
+//const image = 'https://tdesign.gtimg.com/miniprogram/images/example2.png';
+//const imageCdn = 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon';//不好用欸
+//const items = new Array(12).fill({ label: '标题文字', image }, 0, 12);
+const items = [
+  { label: '布局', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/布局.png',url:'/pages/component/view01/view01'}, 
+  { label: '轮播', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/轮播.png', url: '/pages/component/view01/view011'}, 
+  { label: '滚动', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/滚动.png' ,url: '/pages/component/view02/view02'}, 
+  { label: '选项', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/选项.png' ,url: '/pages/component/radio01/radio01'}, 
+  { label: '日期', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/日历,日期.png',url: '/pages/component/picker01/picker01' }, 
+  { label: '图片', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/图片.png' ,url: '/pages/component/image01/image01'}, 
+  { label: '输入', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/输入.png' ,url: '/pages/component/input01/input01'}, 
+  { label: '地图', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/地图.png' ,url: '/pages/component/map01/map01'}, 
+  { label: '导航', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/导航.png',url: '/pages/component/navigator01/navigator01' }, 
+  { label: '视频', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/视频播放.png',url: '/pages/component/video01/video01' }, 
+  { label: '画布', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/画布文件.png' ,url: '/pages/component/canvas01/canvas01'}, 
+  { label: '用户', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/用户.png' ,url: '/pages/component/openwebview01/openwebview01'}, 
+  { label: 'web', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/web.png' ,url: '/pages/component/openwebview01/openwebview011'},
+  { label: '弹窗', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/弹窗.png' ,url: '/pages/component/popup01/popup01'}, 
+  { label: '自定义', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/自定义.png',url: '/pages/component/popup02/popup02'},
+  { label: 'https', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/https.png',url: '/pages/api/request01/request01'},
+  { label: '文件', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/文件.png',url: '/pages/api/file01/file01'},
+  { label: 'web', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/web.png',url: '/pages/api/web01/web01'},
+  { label: '音频', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/音频.png',url: '/pages/api/audio01/audio01'},
+  { label: '视频', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/视频播放.png',url: '/pages/component/video01/video01'},
+  { label: '相机', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/相机.png',url: '/pages/api/photo01/photo01'},
+  { label: '图片', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/图片.png',url: '/pages/api/photo02/photo02'},
+  { label: '缓存', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/缓存.png',url: '/pages/api/storage01/storage01'},
+  { label: '地图', image:'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/地图.png',url: '/pages/component/map01/map01'},
+  { label: '定位', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/定位.png',url: '/pages/api/map02/map02'}
+];
 Page({
   offsetTopList: [],
   /**
@@ -11,51 +39,36 @@ Page({
     scrollTop: 0,
     categories: [
       {
-        label: '选项一',
-        title: '标题一',
-        icon: 'app',
+        label: '组件',
+        title: '组件',
+        icon: 'component-space',
         badgeProps: {},
-        items,
+        items:items.slice(0,15),
       },
       {
-        label: '选项二',
-        title: '标题二',
-        icon: 'app',
+        label: 'API',
+        title: 'API',
+        icon: 'api',
         badgeProps: {
           dot: true,
         },
-        items: items.slice(0, 9),
-      },
-      {
-        label: '选项三',
-        title: '标题三',
-        icon: 'app',
-        badgeProps: {},
-        items: items.slice(0, 9),
-      },
-      {
-        label: '选项四',
-        title: '标题四',
-        icon: 'app',
-        badgeProps: {
-          count: 6,
-        },
-        items: items.slice(0, 6),
-      },
-      {
-        label: '选项五',
-        title: '标题五',
-        icon: 'app',
-        badgeProps: {},
-        items: items.slice(0, 3),
+        items: items.slice(15,25),
       },
     ],
   },
-  jumpToData01(){
- //   wx.navigateTo({
-    wx.switchTab({
-      url: 'pages/bind/data01/data01',
-    })
+//   jumpToData01(){
+//  //   wx.navigateTo({
+//     wx.switchTab({
+//       url: 'pages/bind/data01/data01',
+//     })
+//   },
+  jumpToPage: function (e) {
+    // 获取当前点击的元素的 url 属性
+    const url = e.currentTarget.dataset.url;
+    // 调用 wx.navigateTo 方法，跳转到指定的页面
+    wx.navigateTo({
+      url: url
+    });
   },
 
   /**

@@ -1,11 +1,15 @@
 {
+  "backgroundTextStyle": "light",
+  "navigationBarBackgroundColor": "#009393",
+  "navigationBarTitleText": "小程序",
+  "navigationBarTextStyle": "white",
   "component": true,
-  "navigationBarBackgroundColor": "#fff",
   "usingComponents": {
     "t-divider": "tdesign-miniprogram/divider/divider",
     "t-side-bar": "tdesign-miniprogram/side-bar/side-bar",
     "t-side-bar-item": "tdesign-miniprogram/side-bar-item/side-bar-item",
     "t-grid": "tdesign-miniprogram/grid/grid",
-    "t-grid-item": "tdesign-miniprogram/grid-item/grid-item"
+    "t-grid-item": "tdesign-miniprogram/grid-item/grid-item",
+    "t-icon": "tdesign-miniprogram/icon/icon"
   }
 }

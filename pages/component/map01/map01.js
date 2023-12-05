@@ -1,11 +1,56 @@
 // pages/component/map01/map01.js
+import Message from 'tdesign-miniprogram/message/index';
 Page({
-
+  // data: {
+  //   showMessage: false,
+  // },
+  // onLoad(options) {
+  //   this.getLocation();
+  // },
+  // getLocation() {
+  //   var that = this;
+  //   wx.getLocation({
+  //     type:'gcj02',
+  //     success(res){
+  //       console.log(res);
+  //       const latitude = res.latitude;
+  //       const longitude = res.longitude;
+  //       wx.chooseLocation({
+  //         latitude,
+  //         longitude,
+  //         success(res){
+  //           console.log(res);
+  //           that.setData({
+  //             latitude:latitude,
+  //             longitude:longitude,
+  //             name:res.name,
+  //             add:res.address,
+  //             showMessage: false
+  //           });
+  //         }
+  //       });
+  //     },
+  //     fail() {
+  //       that.setData({ showMessage: true });
+  //     }
+  //   });
+  // },
+  // reloadPage() {
+  //   // this.setData({ showMessage: false });
+  //   // this.getLocation();
+  //   Message.info({
+  //     context: this,
+  //     offset: ['20rpx', 32],
+  //     content: '请打开定位~',
+  //     duration: 2000,
+  //   });
+  //   this.getLocation();
+  // },
   /**
    * 页面的初始数据
    */
   data: {
-
+    // showMessage: false,//再次尝试获取位置
   },
 
   /**
@@ -32,11 +77,17 @@ Page({
             })
           }
         })
+      },
+      fail() {
+        that.setData({ showMessage: true });
       }
-    })
-
+    });
   },
-
+  //再次尝试获取位置
+  reloadPage() {
+    this.setData({ showMessage: false });
+    this.getLocation();
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
@@ -86,3 +137,22 @@ Page({
 
   }
 })
+// Component({//t-message
+//   methods:{
+//     showCloseMessage() {
+//       Message.info({
+//         context: this,
+//         offset: ['20rpx', 32],
+//         content: '这是一条带关闭的消息通知',
+//         duration: -1,
+//         link: {
+//           content: '按钮',
+//           navigatorProps: {
+//             url: '/page/xxx/xxx',
+//           },
+//         },
+//         closeBtn: true,
+//       });
+//     }
+//   }
+// })

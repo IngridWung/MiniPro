@@ -5,4 +5,6 @@
   <text>详细地址：{{add}}\n</text>
   <text>纬度：{{latitude}}\n</text>
   <text>经度:{{longitude}}</text>
+  <!-- 定位未打开 -->
+  <t-message wx:if="{{showMessage}}" type="warning" bind:tap="showCloseMessage" bind:click="reloadPage">请打开定位</t-message>
 </view>
