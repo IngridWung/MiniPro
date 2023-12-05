@@ -41,5 +41,20 @@ page .round-image {
 .demo-5 {
   margin: 0 32rpx;
 }
+.wrapper {
+  margin-bottom: 32rpx;
+}
+
+.long-content {
+  height: 576rpx;
+  margin-top: 16rpx;
+  font-size: 32rpx;
+  color: #888;
+}
+
+.long-content .content-container {
+  white-space: pre-line;
+}
+
 
 

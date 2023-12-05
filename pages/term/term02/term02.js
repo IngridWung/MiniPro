@@ -1,5 +1,5 @@
 // pages/term/term02/term02.js
-//const image = 'https://tdesign.gtimg.com/miniprogram/images/example2.png';
+import Dialog from 'tdesign-miniprogram/dialog/index';
 //const imageCdn = 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon';//不好用欸
 //const items = new Array(12).fill({ label: '标题文字', image }, 0, 12);
 const items = [
@@ -37,6 +37,8 @@ Page({
   data: {
     sideBarIndex: 1,
     scrollTop: 0,
+   flag:0,
+    showDialog: false,//new
     categories: [
       {
         label: '组件',
@@ -56,19 +58,50 @@ Page({
       },
     ],
   },
-//   jumpToData01(){
-//  //   wx.navigateTo({
-//     wx.switchTab({
-//       url: 'pages/bind/data01/data01',
-//     })
-//   },
+  checkLocation: function (e) {
+    // 获取当前点击的元素的 label 属性
+    const label = e.currentTarget.dataset.label;
+    if (label === '地图') {
+      var that = this;
+      wx.getLocation({
+        type:'gcj02',
+        success(res){
+          console.log(res);
+          that.setData({ flag: 0 });//new
+          that.jumpToPage(e);
+        },
+        fail() {
+          that.setData({ 
+            showDialog: true,
+            flag:1,
+            url: e.currentTarget.dataset.url
+           });
+        }
+      });
+    } else {
+      this.jumpToPage(e);
+    }
+  },
   jumpToPage: function (e) {
     // 获取当前点击的元素的 url 属性
-    const url = e.currentTarget.dataset.url;
-    // 调用 wx.navigateTo 方法，跳转到指定的页面
-    wx.navigateTo({
-      url: url
-    });
+//  const url = e.currentTarget.dataset.url;
+  // const { url, flag } = this.data; //new
+  const { flag } = this.data; 
+  let url; 
+  if (flag === 1) {
+    // 如果是地图，需要从保存的数据中取出
+    url = this.data.url; 
+    this.setData({ 
+      showDialog: false,
+      flag:0//如果不置零，所有页面都前往地图界面了
+     });///////
+  } else {
+    // 否则，从当前点击的元素中获取 url
+    url = e.currentTarget.dataset.url; 
+  }
+  wx.navigateTo({
+    url: url
+  });
   },
 
   /**
