@@ -7,56 +7,7 @@ Page({
   data: {
 
   },
-  jumpToRequest01:function(){
-    wx.navigateTo({
-      url: '/pages/api/request01/request01',
-    })
-  },
-  jumpToFile01:function(){
-    wx.navigateTo({
-      url: '/pages/api/file01/file01',
-    })
-  },
-  jumpToweb01(){
-    wx.navigateTo({
-      url: '/pages/api/web01/web01',
-    })
-  },
-  jumpToAudio01(){
-    wx.navigateTo({
-      url: '/pages/api/audio01/audio01',
-    })
-  },
-  jumpToVideo(){
-    wx.navigateTo({
-      url: '/pages/component/video01/video01',
-    })
-  },
-  jumpToPhoto01(){
-    wx.navigateTo({
-      url: '/pages/api/photo01/photo01',
-    })
-  },
-  jumpToPhoto02(){
-    wx.navigateTo({
-      url: '/pages/api/photo02/photo02',
-    })
-  },
-  jumpToStorage01(){
-    wx.navigateTo({
-      url: '/pages/api/storage01/storage01',
-    })
-  },
-  jumpToMap(){
-    wx.navigateTo({
-      url: '/pages/component/map01/map01',
-    })
-  },
-  jumpToMap02(){
-    wx.navigateTo({
-      url: '/pages/api/map02/map02',
-    })
-  },
+ 
   /**
    * 生命周期函数--监听页面加载
    */

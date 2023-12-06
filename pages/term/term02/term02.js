@@ -61,7 +61,7 @@ Page({
   checkLocation: function (e) {
     // 获取当前点击的元素的 label 属性
     const label = e.currentTarget.dataset.label;
-    if (label === '地图') {
+    if (label === '地图' || label === '定位') {
       var that = this;
       wx.getLocation({
         type:'gcj02',
