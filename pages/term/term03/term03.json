@@ -1,3 +1,8 @@
 {
-  "usingComponents": {}
+  "component": true,
+  "usingComponents": {
+    "t-count-down": "tdesign-miniprogram/count-down/count-down",
+    "t-swiper": "tdesign-miniprogram/swiper/swiper",
+    "t-divider": "tdesign-miniprogram/divider/divider"
+  }
 }

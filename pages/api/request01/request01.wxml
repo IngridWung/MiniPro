@@ -1,5 +1,7 @@
 <!--pages/api/request01/request01.wxml-->
 <!-- <text>pages/api/request01/request01.wxml</text> -->
-<button class="Bt" bindtap="forSubmit">请求</button>
-<button class="Bt" bindtap="JumpToBing01">试试bing搜索</button>
+<view style="margin-top: 45%;">
+  <button class="Bt" bindtap="forSubmit">请求</button>
+  <button class="Bt" bindtap="JumpToBing01" style="margin-top: 10%;">试试bing搜索</button>
+</view>
 <!-- <button class="Bt" bindtap="stop">中断任务</button> -->

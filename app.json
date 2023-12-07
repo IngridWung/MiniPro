@@ -5,6 +5,7 @@
     "pages/term/term01/term01",
     "pages/term/term03/term03",
     "pages/term/term04/term04",
+    "pages/term/term05/term05",
     "pages/component/radio01/radio01",
     "pages/component/view01/view01",
     "pages/component/view01/view011",
@@ -62,9 +63,9 @@
       },
       {
         "pagePath": "pages/term/term03/term03",
-        "text": "API",
-        "iconPath": "pages/pics/icon/api.png",
-        "selectedIconPath": "pages/pics/icon/api.png"
+        "text": "莎莎",
+        "iconPath": "pages/pics/icon/滑冰.png",
+        "selectedIconPath": "pages/pics/icon/滑冰.png"
       },
       {
         "pagePath": "pages/cloudtest/cloudtest",

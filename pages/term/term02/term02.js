@@ -18,7 +18,7 @@ const items = [
   { label: 'web', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/web.png' ,url: '/pages/component/openwebview01/openwebview011'},
   { label: '弹窗', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/弹窗.png' ,url: '/pages/component/popup01/popup01'}, 
   { label: '自定义', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/自定义.png',url: '/pages/component/popup02/popup02'},
-  { label: 'https', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/https.png',url: '/pages/api/request01/request01'},
+  { label: 'bing', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/Bing.png',url: '/pages/api/request01/request01'},
   { label: '文件', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/文件.png',url: '/pages/api/file01/file01'},
   { label: 'web', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/web.png',url: '/pages/api/web01/web01'},
   { label: '音频', image: 'cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/音频.png',url: '/pages/api/audio01/audio01'},

@@ -52,7 +52,7 @@ Page({
     Danmu(event) {
       inputvalue = event.detail.value
     },
-    sendDanmu() {
+    sendDanmu(){
       // video=wx.createInnerVideoContext("hellovideo")
       video.sendDanmu({//video
         text: inputvalue,

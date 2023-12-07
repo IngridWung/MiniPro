@@ -4,6 +4,7 @@
   background-color: darkcyan;
   border-radius: 40rpx; 
   color: white;
+  width: 300rpx;
 }
  
 .modal-mask {
