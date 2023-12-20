@@ -1,16 +1,24 @@
 <!--checkbox-->
-<text>pages/radio01/radio01.wxml</text>
-<radio-group bindchange="radioChange">
-  <label wx:for="{{A}}" wx:key="{{A.value}}">
-    <radio value="{{item.value}}">{{item.value}}</radio>
-  </label>
-</radio-group>
+<!-- <text>pages/radio01/radio01.wxml</text> -->
+<view  style="color: darkcyan; margin:20rpx;margin-left: 40%;font-weight: 600;">选项</view>
+<view style="margin-left: 10rpx;">
+  <view style="margin-left: 17%;">
+    <radio-group bindchange="radioChange">
+    <label wx:for="{{A}}" wx:key="{{A.value}}">
+      <radio value="{{item.value}}">{{item.value}}</radio>
+    </label>
+  </radio-group>
+  <view style="margin-top: 20rpx;">
+    <checkbox-group bindchange="checkboxChange">
+      <label wx:for="{{A}}" wx:key="{{A.value}}">
+        <checkbox value="{{item.value}}">{{item.value}}</checkbox>
+      </label>
+    </checkbox-group>
+  </view>
+  </view>
 
-<checkbox-group bindchange="checkboxChange">
-  <label wx:for="{{A}}" wx:key="{{A.value}}">
-    <checkbox value="{{item.value}}">{{item.value}}</checkbox>
-  </label>
-</checkbox-group>
-<image src="/pages/pics/icon/绑定.png" style="height: 80rpx; width: 80rpx;opacity: {{imgOpacity}};"></image>
-<text>\n slider滑块调整图片透明度</text>
+
+<image src="/pages/pics/icon/绑定.png" style="height: 80rpx; width: 80rpx;opacity: {{imgOpacity}};margin-left: 40%;margin-top: 20rpx;"></image>
+<view  style="color: darkcyan; margin:20rpx;margin-left: 22%;font-weight: 600;">\n slider滑块调整图片透明度</view>
 <slider bindchange='changeImgOpacity' min="0" max="1" step="0.1" show-value value="1"></slider> 
+</view>

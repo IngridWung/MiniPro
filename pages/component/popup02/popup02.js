@@ -29,7 +29,7 @@ Page({
   },
   inputData:function(e){
     console.log(e);
-    console.log("number:",e.detail.value);
+    console.log("input:",e.detail.value);
   },
 //取消
   onCancel: function () {

@@ -1,5 +1,5 @@
 <!--pages/component/view02/view02.wxml-->
-<view>横向滚动</view>
+<view style="color: darkcyan; margin:20rpx;margin-left: 40%;">横向滚动</view>
 <scroll-view class="myScroll" scroll-x="true">
   <view class="row">1</view>
   <view class="row"style="background-color:teal;">2</view>
@@ -10,7 +10,7 @@
   <view class="row">7</view>
   <view class="row"style="background-color: darkcyan;">8</view>
 </scroll-view>
-<view>纵向滚动</view>
+<view style="color: darkcyan; margin:20rpx;margin-left: 40%;">纵向滚动</view>
 <scroll-view class="myScroll_y" scroll-y="true">
   <view class="row_y">1</view>
   <view class="row_y"style="background-color: darkcyan;">2</view>

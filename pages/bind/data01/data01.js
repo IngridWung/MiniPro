@@ -19,7 +19,10 @@ Page({
     showtext:1,
     a:1,
     b:2,
-    c:3
+    c:3,
+    number:0,
+    number1:0,
+    inputnumber:0
   },
   jumpToAnotherPage(){
     // wx.switchTab({

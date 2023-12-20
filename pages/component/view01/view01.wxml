@@ -1,12 +1,12 @@
 <!--pages/view01/view01.wxml-->
-<text>pages/view01/view01.wxml</text>
-<view>一行三列</view>
+<!-- <text>pages/view01/view01.wxml</text> -->
+<view style="color: darkcyan; margin:20rpx;margin-left: 40%;">一行三列</view>
 <view class="flex-wrp">
   <view class="first flew_grow">1</view>
   <view class="second flew-grow">2</view>
   <view class="third flew-grow">3</view>
 </view>
-<view>左右混合布局</view>
+<view style="color: darkcyan; margin:20rpx;margin-left: 40%;">左右混合布局</view>
 <view class="flex-wrp" style="height:400rpx">
   <view class="first" style="width:33%;height:400rpx;">1</view>
   <view style="flex-direction: column;flex-grow: 1;">

@@ -1,2 +1,94 @@
 <!--pages/term/term05/term05.wxml-->
-<text>pages/term/term05/term05.wxml</text>
+<!-- <text>pages/term/term05/term05.wxml</text> -->
+<view>
+  <view style="text-align: center;margin-top: 40rpx;"><text style="color: teal;font-size:x-large;font-weight: 1000;">亚历山德拉·特鲁索娃\nAlexandra Trusova\n\n</text></view>
+  <view class="card-theme">
+    <t-swiper
+      current="{{current}}"
+      autoplay="{{autoplay}}"
+      duration="{{duration}}"
+      interval="{{interval}}"
+      bindchange="onChange"
+      navigation="{{ { type: 'dots' } }}"
+      list="{{swiperList}}"
+      image-props="{{ { shape: 'round' } }}"
+      previousMargin="34px"
+      nextMargin="34px"
+      t-class-nav="card-theme-nav"
+    />
+  </view>
+  <view style="margin: 10rpx;"> 
+  <view style="margin-top: 50rpx;"><text class="x-title">个人简介</text></view>
+    <t-divider style="color: darkcyan;" />
+    <!-- <t-divider content="个人简介" /> -->
+    <text class="words">
+      亚历山德拉·特鲁索娃是俄罗斯花样滑冰运动员，是2022年北京奥运会银牌得主、2021年世界花样滑冰锦标赛铜牌得主和2020年欧洲锦标赛铜牌得主。\n
+这位 19 岁的女孩以她的四周跳能力而闻名。她是第一位在比赛中完成4Lz、4F、4T的女性，也是第一位在自由滑中完成两个、三个四周跳的女性。\n
+在2022年冬奥会自由滑中，她完成了令人震惊的5个四周跳，以251.73分获得个人最好成绩177.13分，获得银牌。\n
+特鲁索娃因她锲而不舍的精神以及对花滑的热爱赢得冰友的喜爱。她的小名是Sasha(萨沙)，中国的粉丝亲切地称她为“莎莎”。\n
+    </text>
+  </view>
+  <view>
+    <image src="cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/SashaA/Sasha2.jpg" style="margin-left:15%;width: 500rpx;height: 625rpx;border-radius: 40rpx;"></image>
+  </view>
+  <view style="margin: 10rpx;">
+    <view style="margin-top: 50rpx;"><text class="x-title">精彩表现</text></view>
+    <t-divider style="color: darkcyan;" />
+    <view style="margin-top: 50rpx;"><text style="color: teal;font-size:larger;font-weight: 600;">最“出圈”表演滑</text></view>
+    <text class="words">
+    《Unstoppable》是莎莎在2019年比赛的表演滑节目。她以本曲歌手Sia的经典阴阳头造型出场，蟹步、三周跳一气呵成，为观众带来了一场酣畅淋漓的表演。\n
+    </text>
+    <video id="hellovideo" enable-danmu danmu-list="{{danmuList}}" danmu-btn controls src="cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/video/Unstoppable.mp4" style="width:100%;"></video>
+    <!-- src="{{src}}" 获取不到云文件，需要获取临时url，再设置成src！！-->
+    <view class="danmu-box">
+      <view class="danmu">
+        <text class="txt" style="color:darkcyan">弹幕:</text>
+        <input class="input" placeholder="请输入弹幕" bindinput="Danmu" value="{{inputValue}}"/>
+        <button class="Bt" style="margin-top:3rpx; margin-bottom:5rpx;width: 155rpx;" bindtap="sendDanmu" size="mini" type="primary">发送</button>
+      </view>
+    </view>
+
+  </view>
+
+<!-- 了解更多 -->
+  <view style="margin: 10rpx;">
+    <view style="margin-top: 50rpx;"><text class="x-title">了解更多</text></view>    <t-divider style="color: darkcyan;" />
+    <view style="margin-top: 50rpx;"><text class="s-title">冰演</text></view>    <t-divider style="color: darkcyan;" />
+    <view style="margin-top: 45rpx;margin-left: 20%;">
+      <text class="words" space="ensp" style="color: indigo; font-weight: 600;">《叶夫根尼·普鲁申科的故事》\n</text>
+      <text class="words" space="ensp">   快来支持美人鱼莎莎吧！</text>
+    </view>
+    <view style="margin-top: 15rpx;">
+      <image src="cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/SashaA/iceshow.png" style="margin-left:5%;width: 656rpx;height: 462rpx;border-radius: 40rpx;"></image>
+    </view>
+    <view class="demo-count-down" style="margin-left: 30%; margin-bottom: 0rpx;">
+      <view class="demo-count-down-content">
+        <t-count-down class="custom-count-down" size="large" format="HH:mm:ss" time="{{ time }}" theme="square" />
+      </view>
+    </view>
+    <view>
+      <view style="margin-bottom: 10rpx;margin-left: 32%;margin-top: 0%;"><text class="words" space="ensp">   购票链接↓</text></view>
+      <image src="cloud://mainprogram-1g34f814e053b220.6d61-mainprogram-1g34f814e053b220-1322214062/pics/icon/购票.png"  bindtap="copyLink"  style="width: 100rpx;height: 100rpx; margin-left: 40%;"/>
+    </view>
+  </view>
+  <view style="margin-top: 50rpx;margin-left: 10rpx;"><text style="color: teal;font-size:larger;font-weight: 600;">资料&资讯</text></view>  
+  <t-divider style="color: darkcyan;" />
+  <!-- <view class="container" style="height: 200rpx;"> -->
+  <view class="icon-grid">
+    <image class="icon" src="{{items[0].image}}" bindtap="copyLink1" data-url="{{items[0].url}}" />
+    <image class="icon" src="{{items[1].image}}" bindtap="copyLink1" data-url="{{items[1].url}}" />
+    <image class="icon" src="{{items[2].image}}" bindtap="copyLink1" data-url="{{items[2].url}}" />
+  </view>
+  <!-- </view> -->
+  <view style="margin-left: 10rpx;">
+    <t-divider style="color: darkcyan;" />
+    <view style="margin-top: 50rpx;"><text class="s-title">我们的信息有帮助吗？</text></view>    <t-divider style="color: darkcyan;" />
+    <view class="demo-rate">
+      <view class="demo-rate__title">评个分吧</view>
+      <t-rate value="{{value}}" bind:change="onChange" />
+    </view>
+
+
+
+  </view>
+</view>

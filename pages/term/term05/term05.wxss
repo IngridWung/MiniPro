@@ -1,1 +1,121 @@
 /* pages/term/term05/term05.wxss */
+/* pages/term/term03/term03.wxss */
+.Bt:not([size='default']){ 
+  background-color: darkcyan;
+  border-radius: 40rpx; 
+  color: white;
+  font-size:large;
+}
+.img {
+  width: 100%;
+  height: 100%;
+  /* height: 800rpx; */
+  object-fit: cover;
+}
+
+.card-theme {
+  --td-swiper-radius: 0;
+  --td-swiper-item-padding: 0 12rpx;
+  --td-swiper-nav-dot-color: #e7e7e7;
+  --td-swiper-nav-dot-active-color: #0052d9;
+
+  padding-bottom: 18px;
+}
+
+.card-theme .card-theme-nav {
+  bottom: -18px;
+}
+
+.scale-candidate {
+  height: 126px !important;
+}
+
+.words{
+  font-size: large;
+  font-family: "微软雅黑";
+  color: rgb(3, 80, 80);
+}
+/* video */
+.video {
+  width: 750rpx;
+}
+ 
+.danmu-box {
+  display: flex;
+  border: gray solid 1rpx;
+  border-radius: 3%;
+  margin: 0rpx 5rpx;
+  margin-bottom: 10rpx;
+}
+ 
+.danmu {
+  display: flex;
+  padding-left: 20rpx;
+}
+ 
+.txt {
+  margin-top: 20rpx;
+  padding-left: 20rpx;
+}
+ 
+.input {
+  width: 400rpx;
+  margin-top: 20rpx;
+  padding: 0rpx 30rpx;
+}
+.demo-count-down {
+  padding-bottom: 32rpx;
+}
+
+.demo-count-down-desc {
+  color: rgba(0, 0, 0, 0.6);
+  font-size: 28rpx;
+}
+
+.demo-count-down-content {
+  margin: 24rpx 0;
+}
+.custom-count-down {
+  color: darkcyan;
+}
+.x-title{
+  color: teal;
+  font-size:x-large;
+  font-weight: 600;
+}
+.s-title{
+  color: teal;
+  font-size:larger;
+  font-weight: 600;
+}
+.icon-grid{
+  width:100%;
+}
+.icon{
+  width: 100rpx;
+  height:100rpx;
+  margin-left: 15%;
+}
+
+.demo-rate {
+  /* background-color: #fff; */
+  height: 96rpx;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 32rpx;
+  border-bottom: solid 1rpx #f0f0f0;
+  border-top: solid 1rpx #f0f0f0;
+  margin-top: 32rpx;
+  margin-bottom: 32rpx;
+}
+
+.demo-rate__title {
+  width: 200rpx;
+}
+
+.demo-rate__transparent {
+  background-color: transparent;
+  padding-left: 32rpx;
+  border: 0;
+}

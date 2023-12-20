@@ -1,4 +1,4 @@
-<view>自动轮播</view>
+<view style="color: darkcyan; margin:40rpx;margin-left: 40%;font-size: large;">自动轮播</view>
 <!-- interval:自动切换时间间隔 -->
 <swiper autoplay="true" interval="2000" duration="500">
    <swiper-item> </swiper-item>
